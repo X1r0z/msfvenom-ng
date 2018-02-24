@@ -1,0 +1,20 @@
+payloads = {
+        'windows':{
+        'windows/shell/bind_tcp':['RHOST','RPORT'],
+        'windows/shell/reverse_tcp':['LHOST','LPORT'],
+        'windows/meterpreter/bind_tcp':['RHOST','RPORT'],
+        'windows/meterpreter/reverse_tcp':['LHOST','LPORT']
+        },
+        'linux':{
+        'linux/x86/shell/bind_tcp':['RHOST','RPORT'],
+        'linux/x86/shell/reverse_tcp':['LHOST','LPORT'],
+        'linux/x86/meterpreter/bind_tcp':['RHOST','RPORT'],
+        'linux/x86/meterpreter/reverse_tcp':['LHOST','LPORT']
+        },
+        'android':{
+        'android/shell/bind_tcp':['RHOST','RPORT'],
+        'android/shell/reverse_tcp':['LHOST','LPORT'],
+        'android/meterpreter/bind_tcp':['RHOST','RPORT'],
+        'android/meterpreter/reverse_tcp':['LHOST','LPORT']
+        }
+    }
