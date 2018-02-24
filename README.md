@@ -29,7 +29,7 @@ FILENAME 保存路径&文件名 test.exe /tmp/test.exe
 
 ## custom
 
-编辑 payload.py
+编辑 payloads.py
 
 格式 os (dict) -- payload (dict) -- config (list)
 
