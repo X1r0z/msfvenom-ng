@@ -38,7 +38,7 @@ class enc(object):
 		e = data[::2]
 		i = data[1::2]
 		for c in e:
-			encs += '-e ' + self.encoders.get(arch).get(c) + ' -i ' + i + ' '
+			encs += '-e ' + self.encoders.get(arch).get(c) + ' -i ' + i[e.index(c)] + ' '
 		return encs
 
 	def get_encs(self):

