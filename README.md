@@ -60,7 +60,7 @@ MSFvenom-NG>:
 ```
 x64:
 
-	X x64/xor
+	X: x64/xor
 	Z: x64/zutto_dekiru
 
 x86:
