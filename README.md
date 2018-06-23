@@ -89,7 +89,7 @@ x86:
 	N: x86/unicode_upper
 ```
 
-Ex: S5D3E2 (x86/shikata_ga_nai x5 x86/countdown x3 x86/alpha_upper x3)
+`Ex: S5D3E2 (x86/shikata_ga_nai x5 x86/countdown x3 x86/alpha_upper x3)`
 
 *Powershell 默认使用 cmd/powershell_base64 编码器*
 
