@@ -37,8 +37,9 @@ class enc(object):
 		encs = ''
 		e = data[::2]
 		i = data[1::2]
-		for c in e:
-			encs += '-e ' + self.encoders.get(arch).get(c) + ' -i ' + i[e.index(c)] + ' '
+		for c in e[:-1]:
+			encs += '-e ' + self.encoders.get(arch).get(c) + ' -i ' + i[e.index(c)] + ' -a ' + arch + ' --platform windows -f raw | msfvenom -p - '
+		encs += '-e ' + self.encoders.get(arch).get(e[-1]) + ' -i ' + i[e.index(e[-1])] + ' -a ' + arch + ' --platform windows  '
 		return encs
 
 	def get_encs(self):
