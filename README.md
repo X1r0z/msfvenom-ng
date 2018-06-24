@@ -18,7 +18,7 @@ MSFvenom-NG 是一款交互式 Windows (EXE/DLL Powershell) 后门生成工具
 
 `python3 main.py`
 
-程序第一次运行会进行初始化 (创建 `tmp` 目录并生成 `config.py` `rules.json`)
+程序第一次运行会进行初始化 (创建 `tmp` 目录并生成 `config.json` `rules.json`)
 
 ```
 [*] Initializing
@@ -96,14 +96,13 @@ x86:
 ## CHANGELOG
 
 ```
-2018-06-23 Updated Ver:1.1 重构代码,只针对 Windows 平台,支持 encoder,254行代码
-2018-02-24 Released Ver:1.0 多平台 payload 生成,38行代码
+2017-06-24 Updated Ver:1.2 添加自定义设置 listener, 一键启动 metasploit 监听器
+2018-06-23 Updated Ver:1.1 重构代码,只针对 Windows 平台,支持 encoder
+2018-02-24 Released Ver:1.0 多平台 payload 生成
 ```
 
 ## TODO
 
 免杀 Meterpreter 监听流量
-
-一键启动 metasploit 并开启 handler
 
 自定义设置 (指定 msf 路径 默认参数...)

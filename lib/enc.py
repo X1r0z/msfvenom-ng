@@ -33,7 +33,7 @@ class enc(object):
 			}
 		}
 
-	def parse_encs(self,arch,data):
+	def parse_encs(self, arch, data):
 		encs = ''
 		e = data[::2]
 		i = data[1::2]
@@ -48,12 +48,12 @@ class enc(object):
 		jsondata = json.loads(raw)
 		return jsondata 
 
-	def print_encs(self,jsondata,arch):
+	def print_encs(self, jsondata, arch):
 		rlist = list(jsondata.get(arch).keys())
 		for r in rlist:
 			print('(' + str(rlist.index(r)) + ') ' + r)
 
-	def index_encs(self,jsondata,arch,i):
+	def index_encs(self, jsondata, arch, i):
 
 		rlist = list(jsondata.get(arch).keys())
 		value = jsondata.get(arch).get(rlist[int(i)])

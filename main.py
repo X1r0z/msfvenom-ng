@@ -12,7 +12,7 @@ def main():
 |     |_ -|  _| | | -_|   | . |     |
 |_|_|_|___|_|  \_/|___|_|_|___|_|_|_|
          	MSFvenom-NG
-         		Ver:1.1
+         		Ver:1.2
     	''')
 	console().interface()
 
