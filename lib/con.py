@@ -16,7 +16,7 @@ class con(object):
 			for k,v in jsondata.get(i).items():
 				print('\t' + k + ': ' + v)
 
-	def save_config(jsondata):
+	def save_config(self, jsondata):
 		with open('config.json', 'w') as f:
 			raw = json.dumps(jsondata)
 			f.write(raw)
