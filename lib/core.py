@@ -78,7 +78,7 @@ class console(object):
         elif inp.upper() == 'S':
             command = 'msfconsole -x "'
             jsondata = self.c.get_config()
-            command += jsondata.get('listener').get('command')
+            command += jsondata.get('listen_command')
             command += '"'
             cprint('Starting listener', 'info')
             os.system(command)

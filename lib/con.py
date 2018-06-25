@@ -11,12 +11,10 @@ class con(object):
 		return jsondata
 
 	def print_config(self, jsondata):
-		for i in list(jsondata.keys()):
-			print(i + ':')
-			for k,v in jsondata.get(i).items():
-				print('\t' + k + ': ' + v)
+		for k,v in jsondata.items():
+			print(k + ': ' + v)
 
-	def save_config(jsondata):
+	def save_config(self,jsondata):
 		with open('config.json', 'w') as f:
 			raw = json.dumps(jsondata)
 			f.write(raw)
